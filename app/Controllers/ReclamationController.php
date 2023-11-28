@@ -20,6 +20,7 @@ class ReclamationController extends BaseController
             $validation = \Config\Services::validation();
             $validation->setRules([
                 'CorpReclamation' => 'required',
+                'DateReclamation' => 'required',
             ]);
 
             if ($validation->withRequest($this->request)->run()) {
@@ -89,6 +90,7 @@ class ReclamationController extends BaseController
             $validation = \Config\Services::validation();
             $validation->setRules([
                 'CorpReclamation' => 'required',
+                'DateReclamation' => 'required',
             ]);
 
             if ($validation->withRequest($this->request)->run()) {
